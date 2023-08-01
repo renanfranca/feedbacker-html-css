@@ -1,0 +1,13 @@
+{
+  "name": "feedbacker-static-post-css",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Feedbacker Static PostCss",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
+}

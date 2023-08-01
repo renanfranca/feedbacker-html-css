@@ -1,0 +1,12 @@
+{
+  "actions" : [ {
+    "module" : "init",
+    "date" : "2023-08-01T11:46:03.948157315Z",
+    "properties" : {
+      "projectName" : "Feedbacker Static PostCss",
+      "baseName" : "FeedbackerStaticPostCss",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
+  } ]
+}
