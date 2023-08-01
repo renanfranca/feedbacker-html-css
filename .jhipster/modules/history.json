@@ -8,5 +8,14 @@
       "endOfLine" : "lf",
       "indentSize" : 2
     }
+  }, {
+    "module" : "prettier",
+    "date" : "2023-08-01T11:46:03.986202934Z",
+    "properties" : {
+      "projectName" : "Feedbacker Static PostCss",
+      "baseName" : "FeedbackerStaticPostCss",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
   } ]
 }
