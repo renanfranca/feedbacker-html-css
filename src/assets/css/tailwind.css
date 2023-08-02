@@ -58,3 +58,40 @@ body {
   animation: shimmer infinite alternate ease-in-out;
   animation-duration: 1.6s;
 }
+
+.filter {
+  .count {
+    @apply font-medium text-gray-400;
+  }
+  &--selected {
+    @apply bg-gray-200 rounded-md animate-pulse animate-duration-500 animate-fill-backwards;
+    .count.all {
+      @apply font-black text-mediumslateblue-400;
+    }
+    .count.issue {
+      @apply font-black text-tomato-400;
+    }
+    .count.idea {
+      @apply font-black text-goldenrod-400;
+    }
+    .count.other {
+      @apply font-black text-brand-graydark;
+    }
+  }
+}
+
+.feedback {
+  @apply animate-fadeIn animate-duration-500 animate-fill-forwards;
+
+  .type {
+    &--ISSUE {
+      @apply bg-brand-danger;
+    }
+    &--IDEA {
+      @apply bg-brand-warning;
+    }
+    &--OTHER {
+      @apply bg-brand-graydark;
+    }
+  }
+}
