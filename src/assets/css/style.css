@@ -480,6 +480,41 @@ video {
 .animate-fadeInDown {
   animation: 1s both fadeInDown;
 }
+@keyframes twSpin {
+  from {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+.animate-twSpin {
+  animation: 1s linear both twSpin;
+}
+@keyframes bounce {
+  from, 20%, 53%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scale3d(1, 1.1, 1);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scale3d(1, 1.05, 1);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 0.95, 1);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0) scale3d(1, 1.02, 1);
+  }
+}
+.animate-bounce {
+  animation: 1s both bounce;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -526,6 +561,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-brand-danger {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 134 118 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -619,8 +658,14 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.animate-bounce {
+  transform-origin: center bottom;
+}
 .animate-faster {
   animation-duration: 0.5s;
+}
+.animate-infinite {
+  animation-iteration-count: infinite;
 }
 
 html,
