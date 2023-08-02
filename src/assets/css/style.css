@@ -471,13 +471,14 @@ video {
 .w-full {
   width: 100%;
 }
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
   }
 }
-.animate-spin {
-  animation: spin 1s linear infinite;
+.animate-fadeInDown {
+  animation: 1s both fadeInDown;
 }
 .flex-col {
   flex-direction: column;
@@ -617,6 +618,9 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.animate-faster {
+  animation-duration: 0.5s;
 }
 
 html,
