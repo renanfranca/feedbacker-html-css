@@ -1,4 +1,4 @@
-# Feedbacker Static PostCss
+# Feedbacker HTML + CSS
 
 ## Node.js and NPM
 
